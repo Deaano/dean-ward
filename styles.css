@@ -262,16 +262,20 @@ body {
     .dean{
        font-size: 22vw;
        top: 17vh;
+       letter-spacing: 12px;
     }
     .ward{
        font-size: 22vw;
-       top: 10vh;
+       top: 14vh;
        
     }
     .typedtext{
         top:17vh;
         font-size: 10vw;
 
+    }
+    .logo{
+        margin-left: 15vw;
     }
 }
 
@@ -358,6 +362,15 @@ p{
     
    
 }
+
+@media screen and (max-width:900px){
+    .container .card{
+        margin-left: 0;
+    }
+}
+
+
+
 
 .project-container {
     align-content: center;
