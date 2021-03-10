@@ -274,8 +274,8 @@ body {
         font-size: 10vw;
 
     }
-    .logo{
-        margin-left: 15vw;
+    nav{
+        padding: 1em 15em;
     }
 }
 
@@ -363,7 +363,7 @@ p{
    
 }
 
-@media screen and (max-width:900px){
+@media only screen and (max-width:900px){
     .container .card{
         margin-left: 0;
     }
