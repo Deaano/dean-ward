@@ -241,11 +241,31 @@ body {
     
     .dean{
        font-size: 20vw;
-       top: 11vh;
+       top: 14vh;
     }
     .ward{
        font-size: 20vw;
-       top: -10vh;
+       top: -2vh;
+       
+    }
+    .typedtext{
+        top:-6vh;
+        font-size: -10vw;
+
+    }
+}
+
+@media only screen and (max-width: 900px){
+    
+    .dean{
+       font-size: 20vw;
+       top: 14vh;
+       
+    }
+    .ward{
+       font-size: 20vw;
+       top: -1vh;
+       
        
     }
     .typedtext{
@@ -255,27 +275,71 @@ body {
     }
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 650px){
+
+    a{
+        display: none;
+    }
+    
+    .dean{
+       font-size: 9vw;
+       top: 18vh;
+       letter-spacing: 5px;
+       left: -13.5vw;
+       
+    }
+    .ward{
+       font-size: 9vw;
+       letter-spacing: 4px;
+       top: 11vh;
+       left: -13.5vw;
+       
+       
+    }
+    .typedtext{
+        top:9vh;
+        font-size: 4.2vw;
+        left: -14vw;
+
+    }
+
+    nav{
+        padding:  -2em;
+    }
+
+    .logo-image{
+        font-size: 2vw;
+        left: -6vw;
+    }
+}
+
+@media only screen and (max-width: 500px){
     a{
         display: none;
     }
     .dean{
-       font-size: 22vw;
+       font-size: 20vw;
        top: 17vh;
-       letter-spacing: 12px;
+       left: -4.5vw;
+       
+       
     }
     .ward{
-       font-size: 22vw;
+       font-size: 20vw;
        top: 14vh;
-       
+       left: -4.5vw;
     }
     .typedtext{
         top:17vh;
-        font-size: 10vw;
+        font-size: 8vw;
+        left: -5vw;
 
     }
     nav{
         padding: 1em 15em;
+    }
+    .logo-image{
+        font-size: 3vw;
     }
 }
 
@@ -363,7 +427,7 @@ p{
    
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:500px){
     .container .card{
         margin-left: 0;
     }
