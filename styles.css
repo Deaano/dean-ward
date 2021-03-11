@@ -201,6 +201,16 @@ body {
              opacity: 1;
           }
 }
+
+@keyframes deanwardSmall {
+    0%{
+        top: -100px;
+        opacity: 0.1;
+    }100%{
+        
+        opacity: 1;
+    }
+}
      
 
 .typedtext::after{
@@ -328,13 +338,15 @@ body {
        font-size: 20vw;
        top: 17vh;
        left: 0;
+       animation: deanwardSmall 0.7s ease-in-out;
        
        
     }
     .ward{
        font-size: 20vw;
-       top: 14vh;
+       top: 13vh;
        left: 0;
+       animation: deanwardSmall 0.7s ease-in-out;
     }
     .typedtext{
         top:17vh;
@@ -492,7 +504,8 @@ p{
 
 .project-container{
     height: 100vh;
-    background: hsl(0, 6%, 91%);
+    width: 100vw;
+    background: black;
 }
 
 
