@@ -452,23 +452,47 @@ p{
 }
 
 .quote{
-    
+    font-size: 3.5rem;
     color: black;
-    font-weight: bold;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 55px;
+    font-family: 'Alfa Slab One', cursive;
+    margin-left: 10px;
+    
+}
+
+.black-line{
+    width: 100vw;
+    height: 75px;
+    background: black;
+    z-index: 0;
 }
 
 .quotes-cover{
+    
     position: relative;
+    z-index: 1;
     width: 100vw;
-    height: 40vh;
+    height: 30vh;
     background: rgb(255, 196, 0);
-    opacity: 0.5;
+    opacity: 0.7;
     box-shadow: 20px 2px 20px 50px rgb(255, 196, 0);
+}
+
+@media only screen and (max-width:650px){
+    .quote{
+        font-size: 2rem;
+        margin-top: 65px;
+    }
+    .quotes-cover{
+        height: 18vh;
+    }
 }
 
 .project-container{
     height: 100vh;
-    background: black;
+    background: hsl(0, 6%, 91%);
 }
 
 
