@@ -56,6 +56,7 @@
         <h1 class="dean">DEAN</h1> 
         <h1 class="ward">WARD</h1>
         <h3 class="typedtext" id="typedtext"></h3>
+        <h1><i class="fab fa-github"></i></h1>
     
       </div>
     </div>
@@ -122,7 +123,7 @@
            <img class="right-img" src="images/countdown.png" alt="">
           </div>
           <div class="project-text-box">
-            <h2>Countdown</h2>
+            <h2 class="project-card-header">Countdown</h2>
             <p class="project-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi saepe labore porro rem</p>
           </div>
         </div>
@@ -140,10 +141,34 @@
            <img class="right-img" src="images/todo.png" alt="">
           </div>
           <div class="project-text-box">
-            <h2>Todo List</h2>
+            <h2 class="project-card-header">Todo List</h2>
             <p class="project-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi saepe labore porro rem</p>
           </div>
         </div>
+      
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-details">
+        <h2 class="contact-details-header"> Contact Details</h2>
+        <h3><i class="contact-icon fas fa-home"></i> Address</h3>
+        <p class="contact-info">235 Meadowcroft <br>Aylesbury Bucks <br>HP19 9HZ</p>
+        <h3><i class="contact-icon fas fa-envelope"></i> Email</h3>
+        <p class="contact-info">Dean.leeward@gmail.com</p>
+        <h3><i class="contact-icon fas fa-phone-square"></i> Contact Number</h3>
+        <p class="contact-info">07547986103</p>
+
+      </div>
+      <div class="contact-form">
+        <h2 class="contact-header">Interested? Send Me A Message..</h2>
+        <form id="contact-form" action="contact-form-handler.php" method="post" >
+          <input class="form-control" name="name" type="text" placeholder="Full Name" required> <br>
+          <input type="text" name="email" class="form-control" required placeholder="Enter Email"> <br>
+          <textarea name="message" class="form-control" rows="4" required placeholder="Message" required></textarea> <br>
+          <input type="submit" class="form-control submit" value="Send Message">
+
+        </form>
+      </div>
       
     </div>
  

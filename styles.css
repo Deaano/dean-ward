@@ -122,6 +122,14 @@ body {
      
  }
 
+ .fab{
+    color:rgb(255, 196, 0) ;
+    position: relative;
+    top: -80px;
+    font-size: 75px;
+    cursor: pointer;
+}
+
 
  @keyframes deanSlide {
      0%{     
@@ -377,6 +385,10 @@ body {
     .logo-image{
         font-size: 3vw;
     }
+
+    .fab {
+        top: 125px;
+    }
 }
 
 
@@ -444,6 +456,8 @@ body {
     color:rgb(255, 196, 0);
 }
 
+
+
 p{
     position: relative;
     
@@ -468,6 +482,7 @@ p{
 @media only screen and (max-width:500px){
     .container .card{
         margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -478,7 +493,7 @@ p{
 
 .project-container{
     padding: 5em;
-    max-width: 100vw;
+    min-width: 100vw;
     background: black;    
     justify-content: center;
     align-items: center;
@@ -493,7 +508,7 @@ p{
     margin: 2em;
     background: rgb(255, 196, 0);
     border-radius: 4px;
-    opacity: 0.6;
+    opacity: 0.5;
     transition: 1.1s;  
     
 }
@@ -539,9 +554,12 @@ p{
     text-align: center;
     opacity: 0;
     transition: 1.1s;
+    display: none;
     
     
 }
+
+
 
 .project-text-left{
     position: relative;
@@ -553,7 +571,7 @@ p{
 }
 
 
-h2{
+.project-card-header{
     
     padding-top: 7%;
     padding-left: 40px;
@@ -573,6 +591,7 @@ h2{
 
 .project-card:hover .project-text  {
     opacity: 1;   
+    display: block;
 }
 
 .project-card:hover .project-text-left{
@@ -629,6 +648,112 @@ h2{
     }
     
 }
+
+.contact-container{
+    display: flex;
+    min-width: 100vw;
+    height: 80vh;
+    background: hsl(0, 6%, 91%);
+    
+
+}
+
+.contact-header{
+    color: rgb(255, 196, 0);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0.8em;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 100;
+    margin-left: 50px;
+
+}
+
+.contact-form{
+    box-shadow: black 2px 4px 30px;
+    min-width: 75vw;
+    height: 480px;
+    background: black;
+    position: relative;
+    top: 45px;
+    border-radius: 4px;
+    
+}
+
+input{
+    height: 45px;
+    margin-left: 250px;
+}
+
+textarea{
+    margin-left: 250px;
+    padding-top: 5px;
+}
+
+::-webkit-input-placeholder{
+    color: rgb(255, 196, 0);
+    
+    font-size: 16px;
+}
+
+.form-control{
+    font-size: 1.3rem;
+    width: 70%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(255, 196, 0) ;
+    color: rgb(255, 196, 0);
+
+}
+
+form .submit{
+    width: 50%;
+    border: 2px solid rgb(255, 196, 0);
+    border-radius: 4px;
+    margin-top: 20px;
+    
+}
+
+form .submit:hover{
+    background: rgb(255, 196, 0);
+    color: black;
+}
+
+.contact-details{
+    width: 300px;
+    height: 420px;
+    background: rgb(255, 196, 0);
+    position: relative;
+    top: 75px;
+    left: 150px;
+    z-index: 2;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: black 2px 4px 30px;
+
+}
+
+.contact-details-header{
+    text-align: center;
+    color: black;
+    font-size: 1.7rem;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 100;
+}
+
+.contact-icon{
+    color: black;
+    font-size: 30px;
+    margin-top: 22px;
+    margin-left: 15px;
+}
+
+.contact-info{
+    margin-left: 8px;
+    font-weight: 480;
+}
+
 
 
 
