@@ -43,12 +43,22 @@
         </li>
       </ul>
     </div>
+    
     <div class="burger-menu">
       <div class="burger-line"></div>
       <div class="burger-line"></div>
       <div class="burger-line"></div>
     </div>
   </nav>
+
+  <div class="menu-toggle">
+    <ul>
+      <li class="menu-toggle-list"><a href="#">Home</a></li>
+      <li class="menu-toggle-list"><a href="#">About Me</a></li>
+      <li class="menu-toggle-list"><a href="#">Projects</a></li>
+      <li class="menu-toggle-list"><a href="#">Contact</a></li>
+    </ul>
+  </div>
   
     <div class="top-container">
       <div class="name">
@@ -148,28 +158,37 @@
       
     </div>
 
+    <!--       CONTACT CONTAINER      -->
+
     <div class="contact-container">
       <div class="contact-details">
+        
         <h2 class="contact-details-header"> Contact Details</h2>
+
         <h3><i class="contact-icon fas fa-home"></i> Address</h3>
-        <p class="contact-info">235 Meadowcroft <br>Aylesbury Bucks <br>HP19 9HZ</p>
+        <p class="contact-info">310 Meadowcroft <br>Aylesbury Bucks <br>HP19 9HZ</p>
+
         <h3><i class="contact-icon fas fa-envelope"></i> Email</h3>
-        <p class="contact-info">Dean.leeward@gmail.com</p>
+        <p class="contact-info"> Dean.leeward@gmail.com</p>
+
         <h3><i class="contact-icon fas fa-phone-square"></i> Contact Number</h3>
-        <p class="contact-info">07547986103</p>
+        <p class="contact-info"> 07547986103</p>
 
       </div>
+
       <div class="contact-form">
+
         <h2 class="contact-header">Interested? Send Me A Message..</h2>
-        <form id="contact-form" action="contact-form-handler.php" method="post" >
+
+        <form id="contact-form"  action="mailto:dean.leeward@gmail.com" method="GET" >
           <input class="form-control" name="name" type="text" placeholder="Full Name" required> <br>
+
           <input type="text" name="email" class="form-control" required placeholder="Enter Email"> <br>
+
           <textarea name="message" class="form-control" rows="4" required placeholder="Message" required></textarea> <br>
           <input type="submit" class="form-control submit" value="Send Message">
-
         </form>
       </div>
-      
     </div>
  
       
