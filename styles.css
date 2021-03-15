@@ -64,7 +64,7 @@ body {
     justify-content: center;
     align-content: center;
     text-align: center;
-    min-width: 100vw;
+    max-width: 100vw;
 
 }
 
@@ -140,7 +140,7 @@ ul ,li{
 
  .top-container .name {
      background: black;
-     min-width: 100vw;
+     max-width: 100vw;
      min-height: 100vh;
      
  }
@@ -834,13 +834,32 @@ form .submit:hover{
         width: 100%;
         height: 100%;
         position: static;
-        
-        
+    }
+
+    .github-pic .fab{
+        top: -19px;
     }
 
     .contact-container{
         height: 100%;
     }
+
+    @media only screen and (max-width:500px){
+        .contact-form{
+            display:none;
+        }
+        
+        .contact-details{
+            width: 100%;
+            height: 100%;
+            position: static;
+            
+            
+        }
+    
+        .contact-container{
+            height: 100%;
+        }
 
 
 
