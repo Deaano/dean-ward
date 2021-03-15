@@ -14,7 +14,7 @@ body {
      font-family: 'Alfa Slab One', cursive;
      padding: 1rem 2rem;
      height: 7vh;
-     width: 100vw;
+     min-width: 100vw;
      display: flex;
      flex-direction: row;
      justify-content: space-around;
@@ -64,7 +64,7 @@ body {
     justify-content: center;
     align-content: center;
     text-align: center;
-    width: 100vw;
+    min-width: 100vw;
 
 }
 
@@ -140,7 +140,7 @@ ul ,li{
 
  .top-container .name {
      background: black;
-     min-width: 100%;
+     min-width: 100vw;
      min-height: 100vh;
      
  }
@@ -449,7 +449,7 @@ ul ,li{
 .card-section {
 
     justify-content: space-around;
-  
+    min-width: 100vw;
     display: flex;
 }
 
@@ -825,7 +825,7 @@ form .submit:hover{
     font-weight: 480;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:800px){
     .contact-form{
         display:none;
     }
@@ -839,7 +839,7 @@ form .submit:hover{
     }
 
     .contact-container{
-        height: 58vh;
+        height: 100%;
     }
 
 
