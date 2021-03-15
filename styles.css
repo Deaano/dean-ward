@@ -825,7 +825,7 @@ form .submit:hover{
     font-weight: 480;
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:900px){
     .contact-form{
         display:none;
     }
