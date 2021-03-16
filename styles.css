@@ -1016,6 +1016,7 @@ form .submit:hover{
 
     .contact-header{
         font-size: 1.8rem;
+        padding-left: 40px;
     }
 
     
@@ -1032,7 +1033,7 @@ form .submit:hover{
     
     .contact-details{        
         position: static;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-left: 15px;
         margin-bottom: 30px;
     }
@@ -1077,7 +1078,7 @@ form .submit:hover{
         
         .contact-details{
             width: 79%;
-            height: 60vh;
+            height: 50vh;
             margin-left: 38px;
             position: static;
             margin-bottom: 50px;            
@@ -1086,13 +1087,15 @@ form .submit:hover{
         .contact-icon{
             color: black;
             font-size: 24px;
-            margin-top: 22px;
+            margin-top: 12px;
             margin-left: 15px;
+
         }
         
         .contact-info{
             margin-left: 8px;
             font-weight: 480;
+            margin-top: 5px;
             font-size: 0.8rem;
         }
     }
