@@ -13,7 +13,7 @@ body {
  nav{
      font-family: 'Alfa Slab One', cursive;
      padding: 1rem 2rem;
-     height: 7vh;
+     height: 50px;
      min-width: 100vw;
      display: flex;
      flex-direction: row;
@@ -358,6 +358,10 @@ ul ,li{
         font-size: 5vw;
     }
 
+    nav{
+        height: 50px;
+    }
+
     
 
     .logo-image{
@@ -379,7 +383,7 @@ ul ,li{
     }
 
     nav{
-        height: 10vh;
+        height: 50px;
     }
 
     .logo-image{
@@ -437,6 +441,10 @@ ul ,li{
     .fab{
         top: 16vh;
     }
+
+    nav {
+        height: 50px;
+    }
 }
 
 
@@ -491,11 +499,19 @@ ul ,li{
         font-size: 5vw;
     }
 
+    .burger-menu{
+        top: -6px;
+    }
+
     
 
     .logo-image{
         font-size: 2vw;
         
+    }
+
+    nav{
+        height: 50px;
     }
 
     .fab{
@@ -510,6 +526,8 @@ ul ,li{
     .menu{
         display: none;
     }
+
+    
     .dean{
         letter-spacing: 0.7px;
        font-size: 20vw;
@@ -534,7 +552,7 @@ ul ,li{
     }
     nav{
         text-align: start;
-        height: 10vh;
+        height: 50px;
     }
 
     .links{
@@ -545,10 +563,10 @@ ul ,li{
         width: 75px;
         right: -50px;
         width: 20px;
-        top: 3px;
+        top: -5px;
         background: transparent;
         display: block;
-        top: 3px;
+        
         position: relative;
         cursor: pointer;
     }
@@ -563,7 +581,7 @@ ul ,li{
         font-size: 3vw;
         position: relative;
         left: -18vw;
-        top: 7.5px;
+        top: -4px;
     }
 
     
@@ -1043,7 +1061,8 @@ form .submit:hover{
         position: static;
         margin-top: 20px;
         margin-left: 15px;
-        margin-bottom: 30px;
+        height: 430px;
+        margin-bottom: 15px;
     }
 
     
@@ -1086,10 +1105,10 @@ form .submit:hover{
         
         .contact-details{
             width: 79%;
-            height: 50vh;
-            margin-left: 50px;
+            height: 57vh;
+            margin-left: 40px;
             position: static;
-            margin-bottom: 50px;
+            
             margin-top: 50px;
 
         }          
