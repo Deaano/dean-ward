@@ -27,7 +27,7 @@ body {
     font-family: 'Alfa Slab One', cursive;
     letter-spacing: 18px;
     text-align: center;
-    font-size: 17vw;
+    font-size: 15vw;
     color: rgb(255, 196, 0);
     position: relative;
     top: 8.5vh;
@@ -38,10 +38,10 @@ body {
    font-family: 'Alfa Slab One', cursive;
    letter-spacing: 12px;
    text-align: center;
-   font-size: 17vw;
+   font-size: 15vw;
    color: rgb(255, 196, 0);
    position: relative;
-   top: -10vh;
+   top: -55px;
    font-weight: 100;
    animation: wardSlide 0.4s ease-in-out;
 }
@@ -52,7 +52,7 @@ body {
     text-align: center;
     color: white;
     position: relative;
-    top: -18vh;
+    top: -10vh;
     font-size: 6vw;
     font-family: 'Alfa Slab One', cursive;
     font-weight: 100;
@@ -148,7 +148,7 @@ ul ,li{
  .fab{
     color:rgb(255, 196, 0) ;
     position: relative;
-    top: -80px;
+    top: -45px;
     font-size: 75px;
     cursor: pointer;
 }
@@ -425,7 +425,24 @@ ul ,li{
      }
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (min-height:770px){
+    .ward{
+        top: 10vh;
+    }
+
+    .typedtext{
+        top: 10vh;
+    }
+
+    .fab{
+        top: 16vh;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 736px){
 
     .menu{
         display: none;
@@ -482,7 +499,7 @@ ul ,li{
     }
 
     .fab{
-        top: 10px;
+        top: 40px;
     }
 
    
@@ -622,22 +639,13 @@ ul ,li{
 
 
 
-p{
-    position: relative;
-    
-    height:auto;
-    font-size: 1rem;
-    padding: 0.6em;
-    font-weight: 200;
-    font-family: 'Poppins', sans-serif;
-}
-
 .card-text {
     position: relative;
     background: white;
     height: 200px;
     padding: 20px;
     width: 100%;
+    padding: 1.6em;
     
     
    
@@ -1079,23 +1087,24 @@ form .submit:hover{
         .contact-details{
             width: 79%;
             height: 50vh;
-            margin-left: 38px;
+            margin-left: 50px;
             position: static;
-            margin-bottom: 50px;            
+            margin-bottom: 50px;
+            margin-top: 50px;
+
         }          
 
         .contact-icon{
             color: black;
             font-size: 24px;
-            margin-top: 12px;
-            margin-left: 15px;
+                       
 
         }
         
         .contact-info{
-            margin-left: 8px;
+            margin-left: 12px;
             font-weight: 480;
-            margin-top: 5px;
+            margin-top: 7px;
             font-size: 0.8rem;
         }
     }
