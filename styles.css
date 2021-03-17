@@ -75,29 +75,56 @@ ul ,li{
     
 }
 
-.menu-toggle{
+.menu-list{
     width: 100vw;
-    height: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    flex-wrap: wrap;
+    left: 0;
+    background: black;
+    z-index: 6;
+    transition: 1.4s;
+    transform: translateY(-100%);
+    padding-top: 50px;
+    display: none;
+}
+
+
+.menu-show{
+    width: 100vw;
+    height: 60%;
     position: fixed;
     top: 0;
     left: 0;
     background: black;
     z-index: 6;
-    display: none;
+    transition: 1s ;
+    transform: translateY(0);
     
     
 }
 
-.menu-toggle-list{
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+
+
+
+
+.menu-links {
     display: flex;
-    flex-direction: column;
-    color: white;
-    z-index: 6;
+    margin-top: 5vh;
+    text-decoration: none;
+    color: rgb(255, 196, 0);
+    font-weight: 200;
+    font-size: 1.1rem;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    
+    display: block;
+    font-family: 'Alfa Slab One', cursive;
 }
+
+
  
  
 
@@ -117,7 +144,7 @@ ul ,li{
 
 
 
- a {
+ .menu {
     text-decoration: none;
     color: rgb(255, 196, 0); 
     letter-spacing: 1.2px;
@@ -151,6 +178,10 @@ ul ,li{
     top: -45px;
     font-size: 75px;
     cursor: pointer;
+}
+
+.burger-line:hover{
+    color: white;
 }
 
 
@@ -334,6 +365,12 @@ ul ,li{
         background: rgb(255, 196, 0);
     }
 
+    .burger-line:hover{
+        background: white;
+    }
+
+    
+
     .name{
         align-items: center;
         justify-content: center;
@@ -380,6 +417,10 @@ ul ,li{
 @media only screen and (max-width: 880px){
     .menu{
         display: none;
+    }
+
+    .menu-list{
+        display: block;
     }
 
     nav{
@@ -576,6 +617,10 @@ ul ,li{
         height: 4px;
         margin: 5px;
         background: rgb(255, 196, 0);
+    }
+
+    .menu-list{
+        height: 48%;
     }
     .logo-image{
         font-size: 3vw;
@@ -1105,10 +1150,10 @@ form .submit:hover{
         
         .contact-details{
             width: 79%;
-            height: 57vh;
+            height: 50vh;
             margin-left: 40px;
             position: static;
-            
+            margin-bottom: 50px;
             margin-top: 50px;
 
         }          

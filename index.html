@@ -9,37 +9,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css
-
-
-
-">
-
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <title>Dean Ward</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
+  <nav id="nav">
     <div class="logo">
       <h3 class="logo-image">Dean Ward</h3>
     </div>
     <div class="links">
       <ul>
         <li>
-          <a class="menu" href="#home">Home</a>
+          <a class="menu" href="#nav">Home</a>
         </li>
         <li>
-          <a class="menu" href="">About Me</a>
+          <a class="menu" href="#about">About Me</a>
         </li>
         <li>
-          <a class="menu" href="">Projects</a>
+          <a class="menu" href="#projects">Projects</a>
         </li>
         <li>
-          <a class="menu" href="">Contact</a>
+          <a class="menu" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -51,13 +43,12 @@
     </div>
   </nav>
 
-  <div class="menu-toggle">
-    <ul>
-      <li class="menu-toggle-list"><a href="#">Home</a></li>
-      <li class="menu-toggle-list"><a href="#">About Me</a></li>
-      <li class="menu-toggle-list"><a href="#">Projects</a></li>
-      <li class="menu-toggle-list"><a href="#">Contact</a></li>
-    </ul>
+  <div class="menu-list">
+    <a class="menu-links" href="#nav">Home</a>
+    <a class="menu-links" href="#about">About Me</a>
+    <a class="menu-links" href="#projects">Projects</a>
+    <a class="menu-links" href="#contact">Contact</a>
+    
   </div>
   
     <div class="top-container">
@@ -73,7 +64,7 @@
 
     
       
-      <div class="container">
+      <div id="about" class="container">
         <div class="card">
           <div class="card-img">
            <H3 class="card-header">About Me</H3>
@@ -116,7 +107,7 @@
       
       
     
-      <div class="project-container">
+      <div id="projects" class="project-container">
         
         <div class="project-card">
            
@@ -160,7 +151,7 @@
 
     <!--       CONTACT CONTAINER      -->
 
-    <div class="contact-container">
+    <div id="contact" class="contact-container">
       <div class="contact-details">
         
         <h2 class="contact-details-header"> Contact Details</h2>
