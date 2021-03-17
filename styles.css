@@ -76,11 +76,10 @@ ul ,li{
 }
 
 .menu-list{
-    width: 100vw;
+    width: 100%;
     height: 50%;
     position: fixed;
     top: 0;
-    flex-wrap: wrap;
     left: 0;
     background: black;
     z-index: 6;
@@ -90,9 +89,16 @@ ul ,li{
     display: none;
 }
 
+.menu-list .menu-links{
+    opacity: 0;
+    transition: 0.8s;
+}
 
-.menu-show{
-    width: 100vw;
+
+
+
+.menu-show {
+    width: 100%;
     height: 60%;
     position: fixed;
     top: 0;
@@ -105,13 +111,17 @@ ul ,li{
     
 }
 
+.menu-show .menu-links{
+    opacity: 1;
+    transition: 0.8s;
+}
 
 
 
 
 .menu-links {
     display: flex;
-    margin-top: 5vh;
+    margin-top: 40px;
     text-decoration: none;
     color: rgb(255, 196, 0);
     font-weight: 200;
@@ -349,11 +359,12 @@ ul ,li{
     .burger-menu{
         width: 75px;
         right: 10px;
-        width: 20px;
+        
         top: 3px;
         background: transparent;
         display: block;
         top: 3px;
+        z-index: 12;
         position: relative;
         cursor: pointer;
     }
@@ -365,7 +376,7 @@ ul ,li{
         background: rgb(255, 196, 0);
     }
 
-    .burger-line:hover{
+    .burger-menu:hover .burger-line{
         background: white;
     }
 
@@ -1005,7 +1016,8 @@ textarea{
 }
 
 .form-control{
-   
+    position: relative;
+    left: -60px;
     width: 70%;
     border: none;
     outline: none;
@@ -1046,6 +1058,9 @@ form .submit:hover{
     font-size: 1.7rem;
     font-family: 'Alfa Slab One', cursive;
     font-weight: 100;
+    margin-top: 15px;
+    
+    
 }
 
 .contact-icon{

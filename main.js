@@ -2,30 +2,36 @@ const textArrayData = ["A Front-End Web Developer."]
 
 const typedText = document.querySelector("#typedtext");
 const burgerButton = document.querySelector(".burger-menu");
-const menu = document.querySelector(".menu-list");
 
-let menuActive = 0;
+
+
 
 let startDelay = 1000;
 let typingDelay = 90;
 let charactorIndex = 0;
 let textArrayIndex = 0;
 
+
+
 burgerButton.addEventListener('click', function () {
         
-        menu.classList.toggle('menu-show');
-        menuActive++;
+        let menu = document.querySelector(".menu-list");
+        
+        menu.classList.toggle("menu-show");
+       
 
 });
 
-window.addEventListener('click', function(){
+window.addEventListener('click', function(event){
         
-        if(menuActive > 1){
-               
-        menu.classList.remove("menu-show");
-        menuActive = 0;
+        let menu = document.querySelector(".menu-show");
+       let burger = document.querySelector(".burger-menu");
        
 
+        if(event.target != menu && event.target != burger && event.target.parentNode != menu ){
+               
+                menu.classList.remove("menu-show");
+        
         } 
 });
 
