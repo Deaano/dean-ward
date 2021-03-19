@@ -382,36 +382,7 @@ body {
 
 }
 
-@keyframes burgerToCross {
-    0%{ 
-        opacity: 0.9;
-        margin-left: 5px;
-    }
-    
-    20%{
-        opacity: 0.7;
-        margin-left: 10px;
-    }
-    40%{
-        opacity: 0.5;
-        margin-left: 15px;
-    }
-    60%{
-        opacity: 0.3;
-        margin-left: 20px;
-    }
-    80%{
-        opacity: 0.1;
-        margin-left: 23px;
-
-    }
-    100%{
-        opacity: 0;
-        margin-left: 25px;
-    }
-}
-
-/*                                                  KEYFRAMES WIDTH                                                    */
+/*                                                  MEDIA WIDTH                                                    */
 
 @media only screen and (max-width: 1200px){
     
@@ -573,7 +544,6 @@ body {
        font-size: 11vw;
        letter-spacing: 4px;
        top: 5vh;
-       
     }
     .typedtext{
         top: 1vh;
@@ -669,12 +639,10 @@ body {
     }
 }
 
-/*                                                  KEYFRAMES HEIGHT                                                    */
+/*                                                  MEDIA HEIGHT                                                    */
 
 @media only screen and (min-height:770px){
-    .ward{
-        top: 10vh;
-    }
+    
 
     .typedtext{
         top: 10vh;
@@ -1081,10 +1049,11 @@ form .submit:hover{
 
 .contact-details{
     width: 300px;
-    height: 420px;
+    height: fit-content;
     background: rgb(255, 196, 0);
     position: relative;
     top: 75px;
+    padding-bottom: 20px;
     left: 150px;
     z-index: 2;
     border-radius: 4px;
@@ -1168,7 +1137,8 @@ form .submit:hover{
         position: static;
         margin-top: 20px;
         margin-left: 15px;
-        height: 430px;
+        height: fit-content;
+        padding-bottom: 30px;
         margin-bottom: 15px;
     }
 
@@ -1211,7 +1181,8 @@ form .submit:hover{
         
         .contact-details{
             width: 79%;
-            height: 55vh;
+            height: fit-content;
+            padding-bottom: 30px;
             margin-left: 40px;
             position: static;
             margin-bottom: 50px;
