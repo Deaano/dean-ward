@@ -10,6 +10,8 @@ body {
     overflow-x: hidden;    
 }
 
+/*                                                       NAV                                                         */
+
  nav{
      font-family: 'Alfa Slab One', cursive;
      padding: 1rem 2rem;
@@ -22,12 +24,203 @@ body {
      position: fixed;
      z-index: 10;
  }
- .dean {
+ 
+.logo{
+    color: rgb(255, 196, 0);
+    letter-spacing: 1.2px;
+}
+
+.logo-image{
+   font-family: 'Alfa Slab One', cursive;
+   font-weight: 100;
+}
+
+.logo:hover{
+   color: rgb(253, 253, 252);
+}
+
+.links{
+     justify-content: space-around;
+     width: auto;
+     padding-right: 50px;
+     align-items: center;
+     align-content: center;
+     margin-left: auto;
+     
+}
+
+ .nav-list {
+    display: flex;
+    list-style: none;   
+}
+
+.nav-list-items{
+    justify-content: space-around;
+    list-style-type: none;    
+}
+
+.nav-links{
+    color: rgb(255, 196, 0);
+    font-weight: 200;
+    font-size: 1.1rem;
+    margin-left: 70px;
+    text-decoration: none;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.nav-links:hover{
+    color: white;
+}
+
+/*                                                    BURGER MENU                                                    */
+
+.burger-box{
+    width: 25px;  
+    height: auto; 
+    background: transparent;
+    display: none;    
+    z-index: 10;    
+    cursor: pointer;
+    margin-top: 7px;
+    position: relative;
+    
+}
+
+.burger-line{
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 196, 0);
+    position: relative;
+    top: 2px;
+    display: none;
+    transition: 0.1s;
+}
+
+.burger-line::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 196, 0);
+}
+
+.burger-line::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 196, 0);
+
+}
+
+.burger-cross{    
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    margin-top: 5px;
+    position: relative;
+    margin-right: 3px;
+    display: block;
+}
+
+.burger-cross::before{
+    content: "";
+    position: absolute;    
+    width: 100%;
+    height: 3px;
+    top: -2px;
+    
+    background: rgb(255, 196, 0);
+    display: block;
+    transform: rotate(45deg);
+}
+
+.burger-cross::after{
+    content: "";
+    position: absolute;    
+    width: 100%;
+    height: 3px;
+    top: -3px;
+    background: rgb(255, 196, 0);
+    display: block;
+    transform: rotate(-45deg);
+
+}
+
+.burger-list{
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 6;
+    transition: 1.4s;
+    transform: translateY(-100%);
+    padding-bottom: 50px;
+    margin-top: 50px;
+    display: none;
+}
+
+.burger-links {
+    display: flex;
+    margin-top: 25px;
+    text-decoration: none;
+    color: rgb(255, 196, 0);
+    font-weight: 200;
+    font-size: 1.1rem;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    display: block;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.burger-links:hover{
+    color: white;
+    transition: 0.1s;
+}
+
+.burger-list .burger-links{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.burger-list-show {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 6;
+    transition: 1s ;
+    transform: translateY(0);    
+}
+
+.burger-list-show .burger-links{
+    opacity: 1;
+    transition: 0.8s;
+}
+
+/*                                                  TOP-CONTAINER START                                                */
+
+.top-container {
+    background: black;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.dean {
     font-weight: 100;
     font-family: 'Alfa Slab One', cursive;
     letter-spacing: 18px;
     text-align: center;
-    font-size: 15vw;
+    font-size: 13.5vw;
     color: rgb(255, 196, 0);
     position: relative;
     top: 8.5vh;
@@ -38,7 +231,7 @@ body {
    font-family: 'Alfa Slab One', cursive;
    letter-spacing: 12px;
    text-align: center;
-   font-size: 15vw;
+   font-size: 13.5vw;
    color: rgb(255, 196, 0);
    position: relative;
    top: -55px;
@@ -53,149 +246,23 @@ body {
     color: white;
     position: relative;
     top: -10vh;
-    font-size: 6vw;
+    font-size: 4.5vw;
     font-family: 'Alfa Slab One', cursive;
     font-weight: 100;
 }
 
-
-.name{
-    position: relative;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    width: 100%;
-
-}
-
-ul ,li{
-    display: flex;
-    list-style: none;
-    margin-left: 80px;
-    
-}
-
-.menu-list{
-    width: 100%;
-    height: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: black;
-    z-index: 6;
-    transition: 1.4s;
-    transform: translateY(-100%);
-    padding-top: 50px;
-    display: none;
-}
-
-.menu-list .menu-links{
-    opacity: 0;
-    transition: 0.8s;
-}
-
-
-
-
-.menu-show {
-    width: 100%;
-    height: 60%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: black;
-    z-index: 6;
-    transition: 1s ;
-    transform: translateY(0);
-    
-    
-}
-
-.menu-show .menu-links{
-    opacity: 1;
-    transition: 0.8s;
-}
-
-
-
-
-.menu-links {
-    display: flex;
-    margin-top: 40px;
-    text-decoration: none;
-    color: rgb(255, 196, 0);
-    font-weight: 200;
-    font-size: 1.1rem;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    
-    display: block;
-    font-family: 'Alfa Slab One', cursive;
-}
-
-
- 
- 
-
- .logo{
-     color: rgb(255, 196, 0);
-     letter-spacing: 1.2px;
- }
-
- .logo:hover{
-     color: rgb(253, 253, 252);
- }
-
- .logo-image{
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: 100;
- }
-
-
-
- .menu {
-    text-decoration: none;
-    color: rgb(255, 196, 0); 
-    letter-spacing: 1.2px;
-    font-family: 'Alfa Slab One', cursive;
- }
-
- a:hover{
-     color: rgb(255, 255, 255);
- }
-
- .burger-menu{
-     width: 50px;
-     height: 50px;
-     display: none;
-     right: calc(20px);
-     top: 20px;
-     position: relative;
-     background: chocolate;
- }
-
- .top-container .name {
-     background: black;
-     width: 100%;
-     min-height: 100vh;
-     
- }
-
- .fab{
+.fab{
     color:rgb(255, 196, 0) ;
     position: relative;
-    top: -45px;
+    margin-top: calc(-30px);
     font-size: 75px;
+    margin-left: calc(50% - 25px);
     cursor: pointer;
 }
 
-.burger-line:hover{
-    color: white;
-}
+/*                                                     Animations                                                      */
 
-
- @keyframes deanSlide {
+@keyframes deanSlide {
      0%{     
        left: -200px;
        opacity: 0.2;
@@ -239,7 +306,7 @@ ul ,li{
      }
 }
 
-    @keyframes wardSlide {
+@keyframes wardSlide {
         0%{     
             right: -200px;
             opacity: 0.2;
@@ -292,19 +359,6 @@ ul ,li{
         opacity: 1;
     }
 }
-     
-
-.typedtext::after{
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 4%;
-    width: 1px;
-    border-right: 2px solid rgb(3, 3, 3);  
-    animation: blink 0.8s ease-in infinite; 
-    animation-delay: 0.5s; 
-}
 
 @keyframes blink {
     
@@ -327,6 +381,37 @@ ul ,li{
     }
 
 }
+
+@keyframes burgerToCross {
+    0%{ 
+        opacity: 0.9;
+        margin-left: 5px;
+    }
+    
+    20%{
+        opacity: 0.7;
+        margin-left: 10px;
+    }
+    40%{
+        opacity: 0.5;
+        margin-left: 15px;
+    }
+    60%{
+        opacity: 0.3;
+        margin-left: 20px;
+    }
+    80%{
+        opacity: 0.1;
+        margin-left: 23px;
+
+    }
+    100%{
+        opacity: 0;
+        margin-left: 25px;
+    }
+}
+
+/*                                                  KEYFRAMES WIDTH                                                    */
 
 @media only screen and (max-width: 1200px){
     
@@ -352,35 +437,21 @@ ul ,li{
 
 @media only screen and (max-width: 900px){
 
-    .menu{
+    .menu-links{
         display: none;
     }
 
-    .burger-menu{
-        width: 75px;
-        right: 10px;
-        
-        top: 3px;
-        background: transparent;
+    .burger-list{
         display: block;
-        top: 3px;
-        z-index: 12;
-        position: relative;
-        cursor: pointer;
+    }
+
+    .burger-box{
+        display: block;
     }
 
     .burger-line{
-        width: 100%;
-        height: 4px;
-        margin: 5px;
-        background: rgb(255, 196, 0);
-    }
-
-    .burger-menu:hover .burger-line{
-        background: white;
-    }
-
-    
+        display: block;
+    }    
 
     .name{
         align-items: center;
@@ -426,7 +497,7 @@ ul ,li{
 }
 
 @media only screen and (max-width: 880px){
-    .menu{
+    .nav-links{
         display: none;
     }
 
@@ -442,23 +513,13 @@ ul ,li{
         margin-top: 6px;
     }
 
-    .burger-menu{
-        width: 75px;
-        right: 10px;
-        width: 20px;
-        top: 3px;
-        background: transparent;
+    .burger-box{
         display: block;
-        top: 3px;
-        position: relative;
-        cursor: pointer;
     }
 
     .burger-line{
         width: 100%;
-        height: 4px;
-        margin: 5px;
-        background: rgb(255, 196, 0);
+        display: block;
     }
 
     .dean{
@@ -481,50 +542,18 @@ ul ,li{
      }
 }
 
-@media only screen and (min-height:770px){
-    .ward{
-        top: 10vh;
-    }
-
-    .typedtext{
-        top: 10vh;
-    }
-
-    .fab{
-        top: 16vh;
-    }
-
-    nav {
-        height: 50px;
-    }
-}
-
-
-
-
 @media only screen and (max-width: 736px){
 
-    .menu{
+    .nav-links{
         display: none;
     }
 
-    .burger-menu{
-        width: 75px;
-        right: 10px;
-        width: 20px;
-        top: 3px;
-        background: transparent;
-        display: block;
-        top: 3px;
-        position: relative;
-        cursor: pointer;
+    .burger-box{
+       display: block;
     }
 
     .burger-line{
-        width: 100%;
-        height: 4px;
-        margin: 5px;
-        background: rgb(255, 196, 0);
+        display: block;
     }
 
     .name{
@@ -575,13 +604,14 @@ ul ,li{
 }
 
 @media only screen and (max-width: 500px){
-    .menu{
+    
+    .nav-links{
         display: none;
     }
 
     
     .dean{
-        letter-spacing: 0.7px;
+       letter-spacing: 0.7px;
        font-size: 20vw;
        top: 17vh;
        left: 0;
@@ -611,23 +641,13 @@ ul ,li{
         display: none;
     }
 
-    .burger-menu{
-        width: 75px;
-        right: -50px;
-        width: 20px;
-        top: -5px;
-        background: transparent;
+    .burger-box{
         display: block;
-        
-        position: relative;
-        cursor: pointer;
+        right: -50px;
     }
 
     .burger-line{
-        width: 100%;
-        height: 4px;
-        margin: 5px;
-        background: rgb(255, 196, 0);
+        display: block;
     }
 
     .menu-list{
@@ -649,7 +669,28 @@ ul ,li{
     }
 }
 
-/*                CARD SECTION                   */
+/*                                                  KEYFRAMES HEIGHT                                                    */
+
+@media only screen and (min-height:770px){
+    .ward{
+        top: 10vh;
+    }
+
+    .typedtext{
+        top: 10vh;
+    }
+
+    .fab{
+        top: 16vh;
+    }
+
+    nav {
+        height: 50px;
+    }
+}
+ /*                                                 TOP CONTAINER END                                                  */
+
+ /*                                                CARD SECTION START                                                     */
 
 .card-section {
 
@@ -1141,7 +1182,6 @@ form .submit:hover{
 
         form{
            left: -140px;
-           
         }
 
         .contact-header{
@@ -1165,7 +1205,7 @@ form .submit:hover{
         
         .contact-details{
             width: 79%;
-            height: 50vh;
+            height: 55vh;
             margin-left: 40px;
             position: static;
             margin-bottom: 50px;
@@ -1188,7 +1228,19 @@ form .submit:hover{
         }
     }
 
+    
 
 
+
+    }
+
+    @media only screen and (max-height:395px){
+        .contact-form{
+            left: -120px;
+        }
+
+        .form-control{
+            left: 50px;
+        }
     }
     
