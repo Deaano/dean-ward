@@ -72,7 +72,7 @@ body {
     color: white;
 }
 
-/*                                                    BURGER MENU                                                    */
+/*                                                    BURGER MENU                                                      */
 
 .burger-box{
     width: 25px;  
@@ -206,7 +206,7 @@ body {
     transition: 0.8s;
 }
 
-/*                                                  TOP-CONTAINER START                                                */
+/*                                                  TOP-CONTAINER START                                               */
 
 .top-container {
     background: black;
@@ -260,7 +260,7 @@ body {
     cursor: pointer;
 }
 
-/*                                                     Animations                                                      */
+/*                                                     Animations                                                     */
 
 @keyframes deanSlide {
      0%{     
@@ -382,7 +382,7 @@ body {
 
 }
 
-/*                                                  MEDIA WIDTH                                                    */
+/*                                                  MEDIA WIDTH                                                       */
 
 @media only screen and (max-width: 1200px){
     
@@ -639,7 +639,7 @@ body {
     }
 }
 
-/*                                                  MEDIA HEIGHT                                                    */
+/*                                                    MEDIA HEIGHT                                                      */
 
 @media only screen and (min-height:770px){
     
@@ -656,18 +656,17 @@ body {
         height: 50px;
     }
 }
- /*                                                 TOP CONTAINER END                                                  */
+ /*                                                 TOP CONTAINER END                                                   */
 
- /*                                                CARD SECTION START                                                     */
+ /*                                                 CARD SECTION START                                                  */
 
 .card-section {
-
     justify-content: space-around;
     min-width: 100vw;
     display: flex;
 }
 
-.container {
+.card-container {
     background: hsl(0, 6%, 91%);
     flex-wrap: wrap;
     min-width: 100vw;
@@ -675,7 +674,7 @@ body {
     justify-content: center;
 }
 
-.container .card {
+.card {
     justify-content: center;
     height: 400px;
     margin-left: 3em;
@@ -689,17 +688,10 @@ body {
     
 }
 
-.container .card:hover {
-    transform: translateY(-25px);
-    
-}
+/*                                                   CARD IMG & HEADER                                                   */
 
 .card-header {
     color:rgb(255, 196, 0);
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
     margin-bottom: 15px;
     text-decoration: underline;
 }
@@ -710,9 +702,7 @@ body {
     flex-direction: column;
     background: black;
     justify-content: center;
-    
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .fas {
@@ -720,47 +710,44 @@ body {
     color:rgb(255, 196, 0);
 }
 
+/*                                                       CARD TEXT                                                        */ 
 
-
-.card-text {
-    position: relative;
+.card-text {    
     background: white;
     height: 200px;
-    padding: 20px;
     width: 100%;
-    padding: 1.6em;
-    
-    
-   
+    padding: 1.6em; 
 }
 
+/*                                                     CARD MEDIA WIDTH                                                   */
+
 @media only screen and (max-width:828px){
-    .container .card{
+    .card{
         margin-top: 35px;
         margin-bottom: 35px;
     }
 }
 
 @media only screen and (max-width:500px){
-    .container .card{
+    .card{
         margin-left: 0;
         margin-right: 0;
     }
 }
 
+/*                                                     CARD SECTION END                                                    */
 
-
-
-
+/*                                                   PROJECT SECTION START                                                 */
+ 
 
 .project-container{
     padding: 5em;
     min-width: 100vw;
     background: black;    
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     display: flex;
+    overflow: hidden;
 }
 
  .project-card {
@@ -771,9 +758,7 @@ body {
     background: rgb(255, 196, 0);
     border-radius: 4px;
     opacity: 0.5;
-    transition: 1.1s;
-     
-    
+    transition: 1.1s;    
 }
 
 
@@ -783,13 +768,14 @@ body {
     transition: 1.1s;
 }
 
+/*                                                          PROJECT iMAGE                                                  */
+
 .left-img {
     position: relative;
     padding: 3px;
     display: flex;
     max-width: 399px;
-    height: 250px;  
-    right: 0;  
+    height: 250px;   
     border-radius: 4px;
     transition: 1.1s;
 }
@@ -800,96 +786,74 @@ body {
     max-width: 399px;
     height: 250px;
     display: flex;
-    z-index: 2;
     border-radius: 4px;
     transition: 1.1s;
 }
 
-
-.project-text-box{
-    display: none;
-}
-
-.project-text-box:hover{
-    display: block;
-}
+/*                                                          PROJECT TEXT                                                  */
 
 
-.project-text-box-left{
-    display: none;
-}
-
-.project-text-box-left:hover{
-    display: block;
-}
-
-.project-text{
+.project-left-header{
+    position: relative;
+    left: -570px;
     text-align: center;
     opacity: 0;
     transition: 1.1s;
-    display: none;
-    
-    
+    padding-top: 8px;
 }
-
-
 
 .project-text-left{
     position: relative;
-    left: -390px;
-    text-align: center;
-    opacity: 0;
+    left: -570px;
+    display: none;
     transition: 1.1s;
-
+    text-align: center;
+    
 }
 
-
-.project-card-header{
-    
+.project-right-header{    
     padding-top: 7%;
     padding-left: 40px;
     padding-right: 10px;
     text-align: center;
     opacity: 0;
-    transition: 2s;
-}
-
-.p-left-header{
-    position: relative;
-    left: -400px;
-    text-align: center;
-    opacity: 0;
     transition: 1.1s;
 }
 
-.project-card:hover .project-text  {
-    opacity: 1;   
+.project-right-text{
+    display: none;
+    transition: 1.1s;
+    text-align: center;
+}
+
+/*                                                           PROJECT HOVER                                                  */
+
+.project-card:hover .project-right-text  {   
     display: block;
 }
 
 .project-card:hover .project-text-left{
-    opacity: 1;
+    display: block;
 }
 
 .project-card:hover h2{
-    opacity: 1;
-    
+    display: block;   
 }
 
 .project-card:hover .left-img{
     margin-left: 200px;
     transition: 1.1s;
-    
 }
+
+/*                                                          PROJECT MEDIA                                                   */
+
 
 @media only screen and (max-width:800px){
+    
     .project-card:hover{
         height: 450px;
         opacity: 1;
-        width: 344px;
-        padding-top: 0;
-
-        
+        width: 344px;        
     }
 
     .project-card{
@@ -901,21 +865,14 @@ body {
         margin-left: 0;
         margin-bottom: 100px;
         margin-top: 0;
-        position: relative;
-       
-        
-        
-        
-        
+        position: relative;  
     }
 
     .project-card:hover .right-img{
         margin-left: 0;
         margin-bottom: 100px;
         margin-top: 0;
-        position: relative;
-        
-        
+        position: relative;       
     }
 
     .left-img{
@@ -930,60 +887,13 @@ body {
     
 }
 
-@media only screen and (max-width:500px){
-    .project-card:hover{
-        height: 450px;
-        opacity: 1;
-        width: 350px;
-        padding-top: 0;
-        
-    }
-
-    .project-card{
-        transition: 1.1s;
-        width: 350px;
-    }
-
-    .project-card:hover .left-img{
-        margin-left: 0;
-        margin-bottom: 100px;
-        margin-top: 0;
-        position: relative;
-       
-        
-        
-        
-        
-    }
-
-    .project-card:hover .right-img{
-        margin-left: 0;
-        margin-bottom: 100px;
-        margin-top: 0;
-        position: relative;
-        
-        
-    }
-
-    .left-img{
-        transition: 0.4s;
-        width:343px;
-    }
-
-    .right-img{
-        transition: 0.4s;
-        width:343px;
-    }
-    
-}
+/*                                                         Contact Section                                                   */
 
 .contact-container{
     display: flex;
     min-width: 100vw;
     height: 80vh;
     background: hsl(0, 6%, 91%);
-    
-
 }
 
 .contact-header{
@@ -994,7 +904,6 @@ body {
     font-family: 'Alfa Slab One', cursive;
     font-weight: 100;
     margin-left: 50px;
-
 }
 
 .contact-form{
@@ -1005,8 +914,9 @@ body {
     position: relative;
     top: 45px;
     border-radius: 4px;
-    
 }
+
+/*                                                           INPUT & SUBMIT                                                    */
 
 input{
     height: 45px;
@@ -1020,7 +930,6 @@ textarea{
 
 ::-webkit-input-placeholder{
     color: rgb(255, 196, 0);
-    
     font-size: 16px;
 }
 
@@ -1035,8 +944,7 @@ textarea{
     color: rgb(255, 196, 0);
 }
 
-form .submit{
-    
+form .submit{    
     border: 2px solid rgb(255, 196, 0);
     border-radius: 4px;
     margin-top: 20px;
@@ -1047,19 +955,19 @@ form .submit:hover{
     color: black;
 }
 
+/*                                                             CONTACT DETAILS                                                   */        
+
 .contact-details{
     width: 300px;
     height: fit-content;
     background: rgb(255, 196, 0);
     position: relative;
     top: 75px;
-    padding-bottom: 20px;
     left: 150px;
     z-index: 2;
     border-radius: 4px;
     padding: 20px;
     box-shadow: black 2px 4px 30px;
-
 }
 
 .contact-details-header{
@@ -1068,9 +976,6 @@ form .submit:hover{
     font-size: 1.7rem;
     font-family: 'Alfa Slab One', cursive;
     font-weight: 100;
-    margin-top: 15px;
-    
-    
 }
 
 .contact-icon{
@@ -1091,6 +996,8 @@ form .submit:hover{
     margin-left: 10px;
 }
 
+/*                                                                MEDIA WIDTH                                                     */
+
 @media only screen and (max-width:1500px){
     .contact-form{
         left: -80px;
@@ -1107,21 +1014,18 @@ form .submit:hover{
 
 @media only screen and (max-width:1200px){
 
-   
-    
-    .contact-form{
+   .contact-form{
         margin-right: 250px;
         height: 400px;
         top: 10px;
-        left: -100px;
+        left: -15px;
     }
 
     .contact-header{
         font-size: 1.8rem;
-        padding-left: 40px;
-    }
-
-    
+        left: -100px;
+        position: relative;
+    }    
 
     input{
         height: 40px;
@@ -1142,18 +1046,19 @@ form .submit:hover{
         margin-bottom: 15px;
     }
 
-    
+}
+
+@media only screen and (max-width:700px){
 
     .contact-container{
-        height: 100%;
+        height: fit-content;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
-
-    @media only screen and (max-width:700px){
-       .form-control{
-            width: 260px;
-            margin-left: 120px;
-           
-
+    
+    .form-control{
+        width: 260px;
+        margin-left: 120px;
         }
 
         form{
@@ -1170,11 +1075,11 @@ form .submit:hover{
             width: 150px;
         }
 
-    }
+}
 
-        
-    @media only screen and (max-width:500px){
+@media only screen and (max-width:500px){
 
+    
         .contact-form{
             display:none;
         }
@@ -1186,15 +1091,12 @@ form .submit:hover{
             margin-left: 40px;
             position: static;
             margin-bottom: 50px;
-            margin-top: 50px;
-
+            margin-top: 50px
         }          
 
         .contact-icon{
             color: black;
             font-size: 24px;
-                       
-
         }
         
         .contact-info{
@@ -1203,21 +1105,18 @@ form .submit:hover{
             margin-top: 7px;
             font-size: 0.8rem;
         }
-    }
+}    
 
+/*                                                               MEDIA HEIGHT                                                     */
+
+@media only screen and (max-height:395px){
     
-
-
-
-    }
-
-    @media only screen and (max-height:395px){
-        .contact-form{
-            left: -120px;
+    .contact-form{
+        left: -120px;
         }
 
         .form-control{
-            left: 50px;
+        left: 50px;
         }
-    }
+}
     
