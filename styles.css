@@ -494,22 +494,24 @@ body {
     }
 
     .dean{
-        font-size: -16vw;
-        top: 15vh;
+        font-size: -14vw;
+        top: 14vh;
+        padding-bottom: 2px;
      }
      .ward{
-        font-size: -16vw;
-        top: 8vh;
+        font-size: -14vw;
+        top: 7vh;
         
      }
      .typedtext{
-         top:10.5vh;
-         font-size: -9vw;
+         top:9vh;
+         font-size: -8vw;
  
      }
  
      .fab{
-         top: 90px;
+         top: 14vh;
+         font-size: 40px;
      }
 }
 
@@ -573,7 +575,7 @@ body {
     
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 700px){
     
     .nav-links{
         display: none;
@@ -1111,12 +1113,17 @@ form .submit:hover{
 
 @media only screen and (max-height:395px){
     
-    .contact-form{
-        left: -120px;
-        }
+    .contact-header{
+        left: -2px;
+    }
 
-        .form-control{
-        left: 50px;
+    .contact-form{
+        left: -80px;
+    }
+        
+
+    .form-control{
+        left: -10px;
         }
 }
     
