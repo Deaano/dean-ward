@@ -7,7 +7,7 @@
 
 body {
     width: 100%;
-    overflow-x: hidden;    
+       
 }
 
 /*                                                       NAV                                                         */
@@ -16,13 +16,14 @@ body {
      font-family: 'Alfa Slab One', cursive;
      padding: 1rem 2rem;
      height: 50px;
-     min-width: 100vw;
+     /* min-width: 100vw; */
      display: flex;
      flex-direction: row;
      justify-content: space-around;
      background-color: black;
      position: fixed;
      z-index: 10;
+     width: 100%;
  }
  
 .logo{
@@ -33,6 +34,7 @@ body {
 .logo-image{
    font-family: 'Alfa Slab One', cursive;
    font-weight: 100;
+   margin-left: 35px;
 }
 
 .logo:hover{
@@ -210,9 +212,8 @@ body {
 
 .top-container {
     background: black;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
-    
 }
 
 .dean {
@@ -224,7 +225,7 @@ body {
     color: rgb(255, 196, 0);
     position: relative;
     top: 8.5vh;
-    animation: deanSlide 0.4s ease-in-out; 
+    animation: deanSlide 0.8s ease-in-out; 
 }
 
 .ward{
@@ -236,7 +237,7 @@ body {
    position: relative;
    top: -55px;
    font-weight: 100;
-   animation: wardSlide 0.4s ease-in-out;
+   animation: wardSlide 0.8s ease-in-out;
 }
 
 .typedtext {
@@ -511,7 +512,6 @@ body {
  
      .fab{
          top: 14vh;
-         font-size: 40px;
      }
 }
 
@@ -636,8 +636,9 @@ body {
 
     .fab  {
         position: relative;
-        top: 200px;
+        top: 28vh;
         animation: deanwardSmall 0.7s ease-in-out;
+        left: -8px;
     }
 }
 
@@ -660,6 +661,8 @@ body {
 }
  /*                                                 TOP CONTAINER END                                                   */
 
+ 
+ 
  /*                                                 CARD SECTION START                                                  */
 
 .card-section {
@@ -688,6 +691,26 @@ body {
     margin-top: 6em;
     margin-bottom: 6em;
     
+}
+
+.work-paragraph{
+    line-height: 1.5;
+    font-size: 0.8rem;
+    margin-top: -11px;
+}
+
+.about-paragraph{
+    line-height: 1.5;
+    font-size: 0.83rem;
+}
+
+.language-list{
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.language-list-item{
+    margin-top: 8px;
 }
 
 /*                                                   CARD IMG & HEADER                                                   */
@@ -743,9 +766,9 @@ body {
  
 
 .project-container{
-    padding: 5em;
+    padding: 80px;
     min-width: 100vw;
-    background: black;    
+    background: black;
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
@@ -760,12 +783,12 @@ body {
     background: rgb(255, 196, 0);
     border-radius: 4px;
     opacity: 0.5;
-    transition: 1.1s;    
+    transition: 1.1s;
 }
 
 
 .project-card:hover{
-    width: 600px;
+    width: 500px;
     opacity: 1;
     transition: 1.1s;
 }
@@ -794,107 +817,319 @@ body {
 
 /*                                                          PROJECT TEXT                                                  */
 
-
-.project-left-header{
-    position: relative;
-    left: -570px;
-    text-align: center;
-    opacity: 0;
-    transition: 1.1s;
-    padding-top: 8px;
+.pjt-github{
+    margin-top: 25px;
+    margin-left: -60px;
+    color: black;
+    visibility: hidden;
+    box-shadow: 2px 2px 20px;
+    border-radius: 100%;
 }
 
-.project-text-left{
-    position: relative;
-    left: -570px;
-    display: none;
-    transition: 1.1s;
-    text-align: center;
+.visit-site{
+    border: 5px solid #000000;
+    border-radius: 100%;
+    color: black;
+    width: 80px;
     
+    text-align: center;
+    padding: 10px;
+    line-height: 1.3;
+    box-shadow: 2px 2px 20px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 500;
+    visibility: hidden;
+    cursor: pointer;
+    
+    margin-top: 40px;
 }
 
-.project-right-header{    
-    padding-top: 7%;
-    padding-left: 40px;
-    padding-right: 10px;
+.visit-site-left{
+    margin-left: -440px;
+    border: 5px solid #000000;
+    border-radius: 100%;
+    color: black;
+    width: 80px;
+    margin-top: 45px;    
     text-align: center;
-    opacity: 0;
-    transition: 1.1s;
+    visibility: hidden;    
+    cursor: pointer;
+    font-family: 'Alfa Slab One', cursive;    
+    font-weight: 500;
+    padding: 10px;    
+    line-height: 1.3;    
+    box-shadow: 2px 2px 20px;
 }
 
-.project-right-text{
-    display: none;
-    transition: 1.1s;
-    text-align: center;
+.site-link{
+    text-decoration: none;
+}
+
+.pjt-github-left{
+    margin-left: -482px;
+    margin-top: 25px;
+    color: black;
+    visibility: hidden;
+    box-shadow: 2px 2px 20px;
+    border-radius: 100%;
 }
 
 /*                                                           PROJECT HOVER                                                  */
 
-.project-card:hover .project-right-text  {   
-    display: block;
-}
 
-.project-card:hover .project-text-left{
-    display: block;
-}
-
-.project-card:hover h2{
-    display: block;   
-}
 
 .project-card:hover .left-img{
-    margin-left: 200px;
+    margin-left: 100px;
     transition: 1.1s;
 }
+
+.project-card:hover .pjt-github{
+    visibility: visible;
+    transition: 1.1s;
+    animation: github-icon-right 1.1s;
+    animation-fill-mode: forwards;
+    
+}
+
+.project-card:hover .pjt-github-left{
+    visibility: visible;
+     transition: 1.1s;
+     animation: github-icon-left 1.1s;
+ }
+
+ .project-card:hover .visit-site{
+    visibility: visible;
+     transition: 1.1s;
+     animation: github-icon-right 1.1s;
+     animation-fill-mode: forwards;
+ }
+
+ .project-card:hover .visit-site-left{
+     visibility: visible;
+     transition: 1.1s;
+     animation: github-icon-left 1.1s;
+     animation-fill-mode: forwards;
+ }
+
+@keyframes github-icon-right {
+    0%{
+        margin-left:-100px;
+        opacity: 0;     
+    }
+
+    20%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0.2;
+    }
+    80%{
+        opacity: 0.5;
+    }
+
+    100%{
+        margin-left: 10px;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes github-icon-left {
+    0%{
+        margin-left:-360px;
+        opacity: 0;
+    }
+
+    20%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0.2;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        margin-left: -482px;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes github-icon-right-mb {
+    0%{
+        margin-top: -80px;
+        opacity: 0; 
+    }
+
+    20%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0.2;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        margin-top: 10px;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes github-icon-left-mb {
+    0%{
+        top: -80px;
+        opacity: 0;   
+    }
+    20%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0.2;
+    }
+    60%{
+        opacity: 0.5;
+    }
+    80%{
+        opacity: 0.7;
+    }
+    100%{
+        
+        opacity: 1;
+    }
+    
+}
+
+
 
 /*                                                          PROJECT MEDIA                                                   */
 
 
 @media only screen and (max-width:800px){
+
+    .project-container{
+        padding: 50px 0px;
+    }
     
     .project-card:hover{
-        height: 450px;
+        height: 350px;
         opacity: 1;
-        width: 344px;        
+        width: 334px;
     }
 
     .project-card{
         transition: 1.1s;
-        width: 344px;
+        width: 334px;
+    }
+
+    .project-text-box{
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    .project-text-box-left{
+        margin-left: 0;
+        margin-top: 68px;
     }
 
     .project-card:hover .left-img{
         margin-left: 0;
         margin-bottom: 100px;
         margin-top: 0;
-        position: relative;  
     }
 
     .project-card:hover .right-img{
         margin-left: 0;
         margin-bottom: 100px;
-        margin-top: 0;
-        position: relative;       
+        margin-top: 0;      
     }
 
     .left-img{
         transition: 0.4s;
-        width:343px;
+        width: 100%;
     }
 
     .right-img{
         transition: 0.4s;
-        width:343px;
+        width: 334px;
     }
+
+   .pjt-github-left{
+        position: relative;
+        left: 200px;
+        top: 170px;
+
+}
+
+    .visit-site-left{
+        position: relative;
+        left: 300px;
+        top: 50px;
+}
+
+    .pjt-github{
+        position: relative;        
+        left: -220px;        
+        top: 190px;
+}
+
+    .visit-site{
+        position: relative;
+        left: -140px;
+        top: 105px;
+}
+
+    .project-card:hover .pjt-github{   
+        animation: github-icon-right-mb 0.9s;
+        animation-fill-mode: forwards;
+    
+}
+
+    .project-card:hover .pjt-github-left{
+         animation: github-icon-left-mb 0.9s;
+ }  
+
+    .project-card:hover .visit-site{
+        animation: github-icon-right-mb 0.9s;
+        animation-fill-mode: forwards;
+ }
+
+    .project-card:hover .visit-site-left{
+        animation: github-icon-left-mb 0.9s;
+        animation-fill-mode: forwards;
+ }
+    
+
+    
+    
+}
+
+@media only screen and (max-width:565px){
     
 }
 
 /*                                                         Contact Section                                                   */
 
 .contact-container{
+    overflow-x: hidden;
     display: flex;
     min-width: 100vw;
-    height: 80vh;
+    height: 70vh;
     background: hsl(0, 6%, 91%);
 }
 
@@ -911,11 +1146,12 @@ body {
 .contact-form{
     box-shadow: black 2px 4px 30px;
     min-width: 75vw;
-    height: 480px;
+    height: fit-content;
     background: black;
     position: relative;
     top: 45px;
     border-radius: 4px;
+    padding-bottom: 50px;
 }
 
 /*                                                           INPUT & SUBMIT                                                    */
@@ -937,13 +1173,12 @@ textarea{
 
 .form-control{
     position: relative;
-    left: -60px;
-    width: 70%;
     border: none;
     outline: none;
     background: transparent;
     border-bottom: 2px solid rgb(255, 196, 0);
     color: rgb(255, 196, 0);
+    width: 500px;
 }
 
 form .submit{    
@@ -1003,6 +1238,7 @@ form .submit:hover{
 @media only screen and (max-width:1500px){
     .contact-form{
         left: -80px;
+        padding-bottom: 50px;
     }
 
     .contact-header{
@@ -1018,14 +1254,15 @@ form .submit:hover{
 
    .contact-form{
         margin-right: 250px;
-        height: 400px;
-        top: 10px;
-        left: -15px;
+        height: fit-content;
+        top: px;
+        left: -95px;
+        padding-bottom: 50px;
     }
 
     .contact-header{
         font-size: 1.8rem;
-        left: -100px;
+        /* left: -100px; */
         position: relative;
     }    
 
@@ -1036,7 +1273,7 @@ form .submit:hover{
 
     textarea{
         margin-left: 110px;
-        height: 60px;       
+        height: 60px;
     }
     
     .contact-details{        
@@ -1050,12 +1287,28 @@ form .submit:hover{
 
 }
 
+@media only screen and (max-width:800px){
+    .contact-form{
+        display: none;
+    }
+
+    .contact-details{
+        width: 70vw;
+        margin-left: 15vw;
+        margin-top: 90px;
+    }
+}
+
 @media only screen and (max-width:700px){
 
     .contact-container{
         height: fit-content;
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+
+    .contact-form{
+        display: none;
     }
     
     .form-control{
@@ -1075,6 +1328,11 @@ form .submit:hover{
 
         .form .submit{
             width: 150px;
+        }
+
+        .contact-details{
+            width: 70vw;
+            margin-left: 15vw;
         }
 
 }
